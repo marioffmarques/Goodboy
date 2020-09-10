@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1-beta</PackageVersion>
+    <Authors>Goodboy</Authors>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Owners>Goodboy</Owners>
+    <PackageReleaseNotes>Goodboy set of middlewares, http helpers, classes and generic implementations</PackageReleaseNotes>
+    <Summary>Goodboy set of middlewares, http helpers, classes and generic implementations</Summary>
+    <Title>Goodboy.Http</Title>
+    <Description>Goodboy set of middlewares, http helpers, classes and generic implementations</Description>
+    <PackageId>Goodboy.Http</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="HttpResponses\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Validator\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Goodboy.Practices\Goodboy.Practices.csproj" />
+  </ItemGroup>
+</Project>

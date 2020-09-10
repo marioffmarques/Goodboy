@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1-beta</PackageVersion>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Owners>Goodboy</Owners>
+    <PackageReleaseNotes>Goodboy generic repository implementation</PackageReleaseNotes>
+    <Summary>Goodboy generic repository implementation</Summary>
+    <Title>Goodboy.Repository</Title>
+    <Description>Goodboy generic repository implementation</Description>
+    <PackageId>Goodboy.Repository</PackageId>
+    <Authors>Goodboy</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Goodboy.Practices\Goodboy.Practices.csproj" />
+  </ItemGroup>
+</Project>

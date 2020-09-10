@@ -1,0 +1,32 @@
+﻿FROM microsoft/dotnet:2.0-sdk AS build
+WORKDIR /app
+
+
+# 1. Copy csproj and restore as distinct layers
+
+COPY *.sln .
+COPY Goodboy.Http/*.csproj ./Goodboy.Http/
+COPY Goodboy.Http.Logger/*.csproj ./Goodboy.Http.Logger/
+COPY Goodboy.Practices/*.csproj ./Goodboy.Practices/
+COPY Goodboy.Repository/*.csproj ./Goodboy.Repository/
+COPY Goodboy.Tests/*.csproj ./Goodboy.Tests/
+COPY TestApi/*.csproj ./TestApi/
+RUN dotnet restore
+
+
+# 2. Copy and build everything else
+
+COPY Goodboy.Http/. ./Goodboy.Http/
+COPY Goodboy.Http.Logger/. ./Goodboy.Http.Logger/
+COPY Goodboy.Practices/. ./Goodboy.Practices/
+COPY Goodboy.Repository/. ./Goodboy.Repository/
+COPY Goodboy.Tests/. ./Goodboy.Tests/
+COPY TestApi/. ./TestApi/
+
+RUN dotnet publish -c Release -f netcoreapp2.0 -o out
+
+
+FROM microsoft/dotnet:2.0-runtime
+WORKDIR /app
+COPY --from=build /app/TestApi/out ./
+ENTRYPOINT ["dotnet", "TestApi.dll"]

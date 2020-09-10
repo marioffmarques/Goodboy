@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1-beta</PackageVersion>
+    <Authors>Goodboy</Authors>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Owners>Goodboy</Owners>
+    <PackageReleaseNotes>Goodboy generic development practices</PackageReleaseNotes>
+    <Summary>Goodboy generic development practices</Summary>
+    <Title>Goodboy.Practices</Title>
+    <Description>Goodboy generic development practices</Description>
+    <PackageId>Goodboy.Practices</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entity\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Command\" />
+    <Folder Include="Event\" />
+    <Folder Include="Manager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+</Project>

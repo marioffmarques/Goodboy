@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.2-beta</PackageVersion>
+    <Authors>Goodboy</Authors>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Owners>Goodboy</Owners>
+    <PackageReleaseNotes>Goodboy amqp implementation using easynetq framework</PackageReleaseNotes>
+    <Summary>Goodboy amqp implementation using easynetq framework</Summary>
+    <Title>Goodboy.AMQP.Easynetq</Title>
+    <Description>Goodboy amqp implementation using easynetq framework</Description>
+    <PackageId>Goodboy.AMQP.Easynetq</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.0.0" />
+    <PackageReference Include="EasyNetQ" Version="3.1.0" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Goodboy.Practices\Goodboy.Practices.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+</Project>
