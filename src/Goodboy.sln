@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goodboy.Practices", "Goodboy.Practices\Goodboy.Practices.csproj", "{E0431148-F2EA-4E80-BE14-16AF646E3D77}"
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goodboy.AMQP.Easynetq", "Goodboy.AMQP.Easynetq\Goodboy.AMQP.Easynetq.csproj", "{9E893EFE-29C2-453F-9E33-D1855F8ED6C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goodboy.Test.Api", "Goodboy.Test.Api\Goodboy.Test.Api.csproj", "{4087C0B4-615E-444E-BD58-B361AA6EFA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goodboy.Http.Client", "Goodboy.Http.Client\Goodboy.Http.Client.csproj", "{BC12FED1-6233-4A53-AE72-39E0DE60FA69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,5 +57,9 @@ Global
 		{4087C0B4-615E-444E-BD58-B361AA6EFA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4087C0B4-615E-444E-BD58-B361AA6EFA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4087C0B4-615E-444E-BD58-B361AA6EFA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC12FED1-6233-4A53-AE72-39E0DE60FA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC12FED1-6233-4A53-AE72-39E0DE60FA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC12FED1-6233-4A53-AE72-39E0DE60FA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC12FED1-6233-4A53-AE72-39E0DE60FA69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

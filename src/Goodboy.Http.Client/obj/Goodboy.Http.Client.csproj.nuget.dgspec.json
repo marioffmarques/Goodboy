@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mariomarques/Desktop/goodboy/src/Goodboy.Http.Client/Goodboy.Http.Client.csproj": {}
+  },
+  "projects": {
+    "/Users/mariomarques/Desktop/goodboy/src/Goodboy.Http.Client/Goodboy.Http.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mariomarques/Desktop/goodboy/src/Goodboy.Http.Client/Goodboy.Http.Client.csproj",
+        "projectName": "Goodboy.Http.Client",
+        "projectPath": "/Users/mariomarques/Desktop/goodboy/src/Goodboy.Http.Client/Goodboy.Http.Client.csproj",
+        "packagesPath": "/Users/mariomarques/.nuget/packages/",
+        "outputPath": "/Users/mariomarques/Desktop/goodboy/src/Goodboy.Http.Client/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mariomarques/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
